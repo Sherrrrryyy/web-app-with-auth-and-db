@@ -1,0 +1,401 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: poppins;
+}
+
+button:hover{
+cursor: pointer;
+}
+/* body{
+    background-color: #6d9ac4;
+} */
+.container {
+    flex-wrap: nowrap;
+    background-color: #fff;
+    border-radius: 15px;
+    max-width: 900px;
+    margin: 100px auto;
+    box-shadow: 2px 2px 8px #000;
+    border: none;
+    padding: 30px;
+}
+
+.parent {
+    display: flex;
+    align-items: start;
+    justify-content: space-around;
+}
+
+.input {
+    margin: 15px;
+    padding: 30px;
+    /* border: 1px solid red; */
+}
+
+.input p {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.input input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 5px;
+    border: 1px solid grey;
+    outline: none;
+}
+
+.input button {
+    width: 100%;
+    border-radius: 5px;
+    background-color: #274b6d;
+    border: none;
+    padding: 15px;
+    color: #fff;
+}
+
+.input button:hover {
+    cursor: pointer;
+    background-color: #6d9ac4;
+}
+
+.input p {
+    margin-top: 25px;
+    font-size: 15px;
+}
+
+.input p a {
+    color: #274b6d;
+    text-decoration: none;
+}
+
+.input p a:hover {
+    color: #274b6d;
+}
+
+
+@media (max-width:768px) {
+    .container {
+        max-width: 600px;
+    }
+
+    .parent {
+        display: inline;
+        justify-content: center;
+    }
+}
+
+@media (max-width:480px) {
+    .container {
+        max-width: 400px;
+    }
+
+    .parent {
+
+        display: inline;
+        justify-content: center;
+    }
+
+    .input input {
+        display: inline;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .input button {
+
+        width: 100%;
+
+    }
+}
+
+@media (max-width:360px) {
+    .container {
+        max-width: 320px;
+    }
+
+    .input {
+        flex-wrap: wrap;
+    }
+
+    .input input {
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        max-width: 100%;
+    }
+
+    .input button {
+
+        width: 100%;
+
+    }
+}
+
+/* LOGIN STYLING */
+
+.login-container {
+    flex-wrap: nowrap;
+    background-color: #fff;
+    border-radius: 15px;
+    max-width: 900px;
+    margin: 100px auto;
+    box-shadow: 2px 2px 8px #000;
+    border: none;
+    padding: 30px;
+}
+
+.login-parent {
+    display: flex;
+    align-items: start;
+    justify-content: space-around;
+}
+
+.login-parent h1 {
+    margin-top: 25px;
+}
+
+.login-input {
+    margin: 15px;
+    padding: 30px;
+    /* border: 1px solid red;     */
+
+}
+
+.login-input p {
+    margin-top: 16px;
+    font-size: 15px;
+}
+
+.login-input input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 5px;
+    border: 1px solid grey;
+    outline: none;
+}
+
+.login-input button {
+    width: 100%;
+    border-radius: 5px;
+    background-color: #274b6d;
+    border: none;
+    padding: 15px;
+    color: #fff;
+}
+
+.login-input button:hover {
+    cursor: pointer;
+    background-color: #6d9ac4;
+}
+
+.login-input p {
+    margin-top: 25px;
+    font-size: 15px;
+}
+
+.login-input p a {
+    color: #274b6d;
+    text-decoration: none;
+}
+
+.login-input p a:hover {
+    color: #274b6d;
+}
+
+
+
+
+
+@media (max-width:768px) {
+    .login-container {
+        max-width: 600px;
+    }
+
+    .login-parent {
+        display: inline;
+        justify-content: center;
+    }
+
+}
+
+@media (max-width:480px) {
+    .login-container {
+        max-width: 400px;
+    }
+
+    .login-parent {
+
+        display: inline;
+        justify-content: center;
+    }
+
+    .login-input input {
+        display: inline;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .login-input button {
+
+        width: 100%;
+
+    }
+}
+
+@media (max-width:360px) {
+    .login-container {
+        max-width: 320px;
+    }
+
+    .login-input {
+        flex-wrap: wrap;
+    }
+
+    .login-input input {
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        max-width: 100%;
+    }
+
+    .login-input button {
+
+        width: 100%;
+
+    }
+}
+
+
+/* WEB PAGE STYLING */
+
+body {
+    display: flex;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.sidebar {
+    width: 80px;
+    background-color: #fff;
+    color: #fff;
+    transition: width 0.3s ease;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.sidebar:hover {
+    width: 200px;
+}
+
+.profile {
+
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile i {
+font-size: 1.2rem;
+padding: 8px;
+color: grey;
+border-radius: 50%;
+    border : 2px solid #000;
+    margin-bottom: 15px;
+}
+
+.profile .details {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+.profile .details button{
+    background-color: #274b6d;
+    padding: 6px;
+    margin: 200px 0 0 20px;
+    width: 100px;
+    border: none;
+    color: #fff;   
+}
+
+.sidebar:hover .details {
+    opacity: 1;
+    color: #000;
+}
+
+.main-content {
+
+    width: 100%;
+    /* margin: 0 auto; */
+
+}
+
+.input-todo {
+    padding: 50px;
+    margin: 80px;
+}
+
+.input-todo h1 {
+    font-size: 35px;
+    padding-bottom: 15px;
+}
+
+.input-todo input {
+    width: 600px;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    font-size: 12px;
+}
+
+.input-todo button {
+    background-color: #274b6d;
+    padding: 8px;
+    margin-top: 20px;
+    width: 160px;
+    border: none;
+    color: #fff;
+}
+
+.input-todo button:hover {
+    transition: all ease 0.4s;
+    background-color: #fff;
+    color: #000;
+}
+
+.card {
+margin: 0 auto;
+    /* margin-left: 150px; */
+}
+
+.card-body {
+width: 500px;
+margin: 15px auto;
+/* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+padding: 15px;
+    background-color: #fff;
+border-radius: 8px;
+
+}
+ .card-body h3{
+margin-right: 20px;
+font-size: 15px;
+
+}
+.card-body button {
+    background-color: #274b6d;
+    padding: 5px;
+    width: 120px;
+    border: none;
+    color: #fff;
+    margin-left: 30px;
+}
+.card-body button:hover{
+    transition: all ease 0.4s;
+    background-color: #6d9ac4;
+}

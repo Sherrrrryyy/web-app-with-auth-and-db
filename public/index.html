@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body style="background-color: #6d9ac4;">
+
+
+    <div class="sidebar">
+        <div class="profile">
+            <i class="fa-solid fa-user"></i>
+            <div class="details">
+                <h5 id="name" style="font-size: 10px;">User Name</h5>
+                <p style="font-size: 10px;" id="email">user@example.com</p>
+                <button onclick="signOut()">Sign out</button>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="main-content">
+        <div class="input-todo">
+            <h1>To-dos</h1>
+            <input id="todoInput" placeholder="Add your To-dos" type="text">
+            <button id="addTodo">ADD</button>
+            <button id="dltAllTodo">DELETE</button>
+        </div>
+
+        <div id="parent" class="card">
+            <!-- <div class="card-body">
+                <h3>Card title</h3>
+                <button>Edit</button>
+                <button>Delete</button>
+
+
+            </div> -->
+        </div>
+
+    </div>
+
+
+
+
+</body>
+
+<script src="../public/javascript/app.js" type="module"></script>
+<script src="../public/javascript/user.js" type="module"></script>
+
+</html>
