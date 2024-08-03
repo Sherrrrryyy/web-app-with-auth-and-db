@@ -1,6 +1,6 @@
 window.addEventListener("load", () => {
   if (localStorage.getItem("user")) {
-    window.location.replace("../public/pages/index.html");
+    window.location.replace("../pages/index.html");
   }
 });
 
@@ -30,7 +30,7 @@ console.log(uid);
 
     const userResponse = await setDoc(doc(db, "todo-User", uid), userObj);
     localStorage.setItem("user", uid)
-    window.location.href = "../public/pages/index.html"   
+    window.location.href = "../pages/index.html"   
 
 
   } catch (error) {

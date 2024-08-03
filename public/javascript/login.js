@@ -1,6 +1,6 @@
 window.addEventListener("load", ()=>{
     if(localStorage.getItem("user")){
-        window.location.replace("../public/pages/index.html")
+        window.location.replace("../pages/index.html")
     }
 })
 
@@ -21,7 +21,7 @@ btn.addEventListener("click", async () => {
         const res = await signInWithEmailAndPassword(auth, em.value, ps.value);
         console.log("Login successfully:", res);
         localStorage.setItem("user", res.user.uid)
-        window.location.href = "../public/pages/index.html"        
+        window.location.href = "../pages/index.html"        
 
     } catch (error) {
         alert(`This user can not exist: ${error.message}`);

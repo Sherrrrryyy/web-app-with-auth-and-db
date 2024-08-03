@@ -1,6 +1,6 @@
 window.addEventListener("load", () => {
     if (!localStorage.getItem("user")) {
-        window.location.replace("../public/pages/signin.html")
+        window.location.replace("../pages/signin.html")
     }
 })
 
